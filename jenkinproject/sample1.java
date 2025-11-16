@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Checkout Code') {
 steps {
-git branch: 'main', url: 'https://github.com/deepak574/project.git'
+git branch: 'main', url: 'https://github.com/balwinder1321/project.git'
 }
 }
 stage('Build') {
@@ -26,7 +26,7 @@ post
 {
 success
 {
-mail to:’gujjuladeepak@gmail.com’,
+mail to:Balwindersinghsardar1@gmail.com,
 subject: “Build success”,
 Body: ‘Your build was successfull’
 }
